@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'DotUserDefaults_Example', :exclusive => true do
+  pod 'DotUserDefaults', :path => '../'
+end
+
+target 'DotUserDefaults_Tests', :exclusive => true do
+  pod 'DotUserDefaults', :path => '../'
+
+  pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+end
