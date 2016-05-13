@@ -7,18 +7,36 @@
 //
 
 import UIKit
+import DotUserDefaults
+
+enum MyDefaults: String {
+  case WelcomeText = "welcomeText"
+}
+
+enum WelcomeText: String {
+  case Hai = "👋"
+  case Cheers = "🍻"
+  case Cool = "👌"
+
+  var next: WelcomeText {
+    switch self {
+      case .Hai: return .Cheers
+      case .Cheers: return .Cool
+      case .Cool: return .Hai
+    }
+  }
+}
+
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+  @IBOutlet weak var label: UILabel! {
+    didSet {
+      let message:WelcomeText = NSUserDefaults.standardUserDefaults().enumForKey(MyDefaults.WelcomeText) ?? WelcomeText.Hai
+      label.text = message.rawValue
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      // update defaults
+      NSUserDefaults.standardUserDefaults().setEnum(message.next, forKey: MyDefaults.WelcomeText)
     }
-
+  }
 }
-

@@ -1,10 +1,10 @@
 use_frameworks!
 
-target 'DotUserDefaults_Example', :exclusive => true do
+target 'DotUserDefaults_Example' do
   pod 'DotUserDefaults', :path => '../'
 end
 
-target 'DotUserDefaults_Tests', :exclusive => true do
+target 'DotUserDefaults_Tests' do
   pod 'DotUserDefaults', :path => '../'
 
   pod 'Quick', '~> 0.8'

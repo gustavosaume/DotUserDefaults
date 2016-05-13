@@ -9,32 +9,23 @@
 Pod::Spec.new do |s|
   s.name             = "DotUserDefaults"
   s.version          = "0.1.0"
-  s.summary          = "A short description of DotUserDefaults."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = "Access and store NSUserDefaults with Enums"
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    .UserDefaults has two main functions. It will let you access NSUserDefaults
+    using string type Enums, so you don't have to type .rawValue every time you
+    want to use Enums as the keys of your NSUserDefaults. Also, this extension
+    adds methods that will let you easily store RawRepresentable Enums in the NSUserDefaults.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DotUserDefaults"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/gustavosaume/DotUserDefaults"
   s.license          = 'MIT'
   s.author           = { "Gustavo Saume" => "gustavosaume@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DotUserDefaults.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/gustavosaume/DotUserDefaults.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/withbreakpoints'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DotUserDefaults/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DotUserDefaults' => ['DotUserDefaults/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -1,0 +1,22 @@
+PODS:
+  - DotUserDefaults (0.1.0)
+  - Nimble (3.2.0)
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - DotUserDefaults (from `../`)
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  DotUserDefaults:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DotUserDefaults: a45820ab4e9bdad6c6e9239e409f8e4b5e25b010
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+PODFILE CHECKSUM: fb448cb862f122a52f2e32e3e9063436d05007a2
+
+COCOAPODS: 1.0.0.rc.2

@@ -1,0 +1,19 @@
+{
+  "name": "DotUserDefaults",
+  "version": "0.1.0",
+  "summary": "A short description of DotUserDefaults.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/DotUserDefaults",
+  "license": "MIT",
+  "authors": {
+    "Gustavo Saume": "gustavosaume@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/DotUserDefaults.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DotUserDefaults/Classes/**/*"
+}

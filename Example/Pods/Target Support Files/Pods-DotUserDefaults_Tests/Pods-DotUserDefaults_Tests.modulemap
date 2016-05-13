@@ -1,0 +1,6 @@
+framework module Pods_DotUserDefaults_Tests {
+  umbrella header "Pods-DotUserDefaults_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

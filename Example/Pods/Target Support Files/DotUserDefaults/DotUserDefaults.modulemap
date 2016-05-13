@@ -1,0 +1,6 @@
+framework module DotUserDefaults {
+  umbrella header "DotUserDefaults-umbrella.h"
+
+  export *
+  module * { export * }
+}
